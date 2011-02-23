@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.google.inject.extensions</groupId>
+  <artifactId>guice-struts2</artifactId>
+  <versioning>
+    <release>3.0-RC2</release>
+    <versions>
+      <version>3.0-RC2</version>
+    </versions>
+    <lastUpdated>20110223215844</lastUpdated>
+  </versioning>
+</metadata>
