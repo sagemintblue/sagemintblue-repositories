@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>edu.cmu.commons.mojos</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.1.1</version>
+	</parent>
+	<artifactId>exec</artifactId>
+	<packaging>maven-plugin</packaging>
+	<name>CMU Commons Mojos Exec</name>
+	<description>Maven plugin supporting execution of processes and generation of application start scripts</description>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+		</dependency>
+	</dependencies>
+</project>
