@@ -1,8 +1,8 @@
-# Sagemintblue's Maven Repository
+# Sagemintblue's Maven Repositories
 
 This project contains Maven repositories for release and snapshot
 artifacts of other projects, such as [CMU
-Commons](https://github.com/sagemintblue/cmu-commons)
+Commons](https://github.com/sagemintblue/cmu-commons).
 
 To start using artifacts hosted here within your own Maven project,
 add the following `<repository>` elements to your project's `pom.xml`
