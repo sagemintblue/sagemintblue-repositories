@@ -15,14 +15,14 @@ following `<repository>` elements to an active profile defined in your Maven
       <repository>
         <id>sagemintblue-releases</id>
         <name>Sagemintblue Releases</name>
-        <url>https://github.com/sagemintblue/sagemintblue-maven-repository/raw/master/releases</url>
+        <url>https://github.com/sagemintblue/sagemintblue-maven-repositories/raw/master/releases</url>
         <releases><enabled>true</enabled></releases>
         <snapshots><enabled>false</enabled></snapshots>
       </repository>
       <repository>
         <id>sagemintblue-thirdparty</id>
         <name>Sagemintblue Thirdparty</name>
-        <url>https://github.com/sagemintblue/sagemintblue-maven-repository/raw/master/thirdparty</url>
+        <url>https://github.com/sagemintblue/sagemintblue-maven-repositories/raw/master/thirdparty</url>
         <releases><enabled>true</enabled></releases>
         <snapshots><enabled>false</enabled></snapshots>
       </repository>
@@ -36,9 +36,29 @@ entry is required:
       <repository>
         <id>sagemintblue-snapshots</id>
         <name>Sagemintblue Snapshots</name>
-        <url>https://github.com/sagemintblue/sagemintblue-maven-repository/raw/master/snapshots</url>
+        <url>https://github.com/sagemintblue/sagemintblue-maven-repositories/raw/master/snapshots</url>
         <releases><enabled>false</enabled></releases>
         <snapshots><enabled>true</enabled></snapshots>
       </repository>
     </repositories>
 
+
+## Proxying Sagemintblue Repositories with Nexus
+
+If you use Sonatype's [Nexus repository manager][2], you may want to add proxy
+entries to your Nexus configuration for the Sagemintblue repositories. Here are
+a few notes to keep in mind:
+
+ * Sagemintblue repositories don't contain indices. You should set `Remote
+   Repository Access > Download Remote Indexes` to `false`.
+
+ * Because GitHub doesn't generate directory listings for `raw` repository
+   directory URLs, Nexus will automatically block the proxied repositories if
+   `Remote Repository Access > Auto blocking active` is set to `true`. Set this
+   option to `false` and click `Refresh`. You should see a `Repository Status`
+   of `Attempting to Proxy and Remote Unavailable`. Nexus should still be able
+   to access specific artifact, pom and checksum file URLs despite the missing
+   directory listings.
+
+[1]: http://maven.apache.org/settings.html
+[2]: http://nexus.sonatype.org/
