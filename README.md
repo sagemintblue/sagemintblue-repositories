@@ -1,4 +1,4 @@
-# Sagemintblue's Maven Repositories
+# Sagemintblue Repositories
 
 This project contains Maven repositories for release, snapshot and third-party
 artifacts of other projects, such as [CMU
@@ -15,14 +15,14 @@ following `<repository>` elements to an active profile defined in your Maven
       <repository>
         <id>sagemintblue-releases</id>
         <name>Sagemintblue Releases</name>
-        <url>https://github.com/sagemintblue/sagemintblue-maven-repositories/raw/master/releases</url>
+        <url>https://github.com/sagemintblue/sagemintblue-repositories/raw/master/releases</url>
         <releases><enabled>true</enabled></releases>
         <snapshots><enabled>false</enabled></snapshots>
       </repository>
       <repository>
         <id>sagemintblue-thirdparty</id>
         <name>Sagemintblue Thirdparty</name>
-        <url>https://github.com/sagemintblue/sagemintblue-maven-repositories/raw/master/thirdparty</url>
+        <url>https://github.com/sagemintblue/sagemintblue-repositories/raw/master/thirdparty</url>
         <releases><enabled>true</enabled></releases>
         <snapshots><enabled>false</enabled></snapshots>
       </repository>
@@ -36,7 +36,7 @@ entry is required:
       <repository>
         <id>sagemintblue-snapshots</id>
         <name>Sagemintblue Snapshots</name>
-        <url>https://github.com/sagemintblue/sagemintblue-maven-repositories/raw/master/snapshots</url>
+        <url>https://github.com/sagemintblue/sagemintblue-repositories/raw/master/snapshots</url>
         <releases><enabled>false</enabled></releases>
         <snapshots><enabled>true</enabled></snapshots>
       </repository>
